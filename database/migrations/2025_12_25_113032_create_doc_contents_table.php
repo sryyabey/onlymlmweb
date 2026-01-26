@@ -21,6 +21,7 @@ return new class extends Migration {
             $table->string('seo_title')->nullable();
             $table->text('image')->nullable();
             $table->boolean('is_active')->default(true);
+            $table->boolean('is_private')->default(false);
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });

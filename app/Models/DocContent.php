@@ -18,6 +18,7 @@ class DocContent extends Model
         'seo_title',
         'image',
         'is_active',
+        'is_private',
         'published_at',
     ];
 
@@ -29,6 +30,7 @@ class DocContent extends Model
 
     protected $casts = [
         'is_active' => 'boolean',
+        'is_private' => 'boolean',
         'published_at' => 'datetime',
     ];
 

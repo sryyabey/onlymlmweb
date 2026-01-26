@@ -73,6 +73,10 @@ class DocContentForm
                             ])
                             ->columnSpanFull(),
                         Toggle::make('is_active')
+                            ->default(true)
+                            ->required(),
+                        Toggle::make(name: 'is_private')
+                            ->default(false)
                             ->required(),
                         DateTimePicker::make('published_at'),
                         FileUpload::make('image')
