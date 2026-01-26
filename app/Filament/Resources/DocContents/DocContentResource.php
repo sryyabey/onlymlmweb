@@ -12,10 +12,12 @@ use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
+use LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable;
 use Filament\Tables\Table;
 
 class DocContentResource extends Resource
 {
+    use Translatable;
     protected static ?string $model = DocContent::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedDocumentText;

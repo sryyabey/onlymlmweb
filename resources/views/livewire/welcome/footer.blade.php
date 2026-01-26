@@ -3,14 +3,14 @@
         <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div>
                 <p class="title-font text-xl font-semibold text-white">OnlyMLM</p>
-                <p class="mt-2 text-sm text-slate-400">Enterprise seviyede MLM &amp; Binary SaaS altyapısı.</p>
+                <p class="mt-2 text-sm text-slate-400">{{ __('layout.footer.description') }}</p>
             </div>
             <div class="flex flex-wrap gap-6 text-sm">
-                <span>Lisanslı kullanım</span>
-                <span>Güvenlik odaklı</span>
-                <span>Ölçeklenebilir mimari</span>
+                <span>{{ __('layout.footer.licensed') }}</span>
+                <span>{{ __('layout.footer.security') }}</span>
+                <span>{{ __('layout.footer.scalable') }}</span>
             </div>
         </div>
-        <p class="mt-8 text-xs text-slate-500">© 2024 OnlyMLM. Tüm hakları saklıdır.</p>
+        <p class="mt-8 text-xs text-slate-500">{{ __('layout.footer.copyright') }}</p>
     </div>
 </footer>

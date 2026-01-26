@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="tr">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 @include('livewire.welcome.header')
 
@@ -26,7 +26,7 @@
 
     <a href="#top"
         class="fixed bottom-6 right-6 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full bg-slate-900 text-white shadow-lg transition hover:bg-slate-800"
-        aria-label="Yukarı çık">
+        aria-label="{{ __('layout.back_to_top') }}">
         <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
             <path fill-rule="evenodd"
                 d="M10 4a.75.75 0 0 1 .53.22l4.25 4.25a.75.75 0 1 1-1.06 1.06L10.75 6.56V16a.75.75 0 0 1-1.5 0V6.56L6.28 9.53a.75.75 0 1 1-1.06-1.06l4.25-4.25A.75.75 0 0 1 10 4Z"

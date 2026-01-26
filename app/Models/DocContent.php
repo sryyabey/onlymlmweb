@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 class DocContent extends Model
 {
+    use HasTranslations;
     protected $fillable = [
         'title',
         'slug',
@@ -17,6 +19,12 @@ class DocContent extends Model
         'image',
         'is_active',
         'published_at',
+    ];
+
+    public $translatable = [
+        'title',
+        'excerpt',
+        'body',
     ];
 
     protected $casts = [

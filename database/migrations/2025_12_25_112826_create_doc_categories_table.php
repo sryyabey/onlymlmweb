@@ -12,12 +12,12 @@ return new class extends Migration {
     {
         Schema::create('doc_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->json('name');
             $table->string('slug')->unique();
             $table->foreignId('parent_id')->nullable()->constrained('doc_categories')->nullOnDelete();
             $table->boolean('is_active')->default(true);
             $table->text('image')->nullable();
-            $table->text('description')->nullable();
+            $table->json('description')->nullable();
             $table->integer('sort_order')->default(0);
             $table->timestamps();
         });

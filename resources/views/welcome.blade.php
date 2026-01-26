@@ -3,43 +3,39 @@
     <section class="relative  mx-auto w-full max-w-6xl px-6 pb-20 pt-10 md:pt-20">
         <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Güvenli • Lisanslı •
-                    Ölçeklenebilir</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.hero.tagline') }}</p>
                 <h1 class="title-font mt-6 text-4xl font-semibold leading-tight text-slate-900 md:text-5xl">
-                    Enterprise-Grade MLM &amp; Binary Platform
+                    {{ __('welcome.hero.title') }}
                 </h1>
                 <p class="mt-6 text-lg text-slate-600">
-                    OnlyMLM, kurumsal büyüme ekipleri için tasarlanmış, regülasyon uyumlu ve yüksek performanslı bir
-                    MLM/Binary SaaS altyapısıdır. Lisanslı dağıtım modeli, güvenlik sertifikaları ve entegrasyon
-                    katmanı
-                    ile “indir-kur” değil, yönetilebilir ve sürdürülebilir bir sistem sunar.
+                    {{ __('welcome.hero.description') }}
                 </p>
                 <div class="mt-8 flex flex-wrap items-center gap-4">
-                    <a href="#demo"
+                    <a href="#fiyat"
                         class="rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700">
-                        Kurumsal Demo Talep Et
+                        {{ __('welcome.hero.cta_primary') }}
                     </a>
-                    <a href="#ozellikler"
+                    <a href="#nasil-calisir"
                         class="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">
-                        Platformu Keşfet
+                        {{ __('welcome.hero.cta_secondary') }}
                     </a>
                 </div>
                 <div class="mt-10 grid grid-cols-2 gap-6 text-sm text-slate-500 md:grid-cols-4">
                     <div>
-                        <p class="title-font text-xl font-semibold text-slate-900">%99.95</p>
-                        <p>Uptime hedefi</p>
+                        <p class="title-font text-xl font-semibold text-slate-900">{{ __('welcome.hero.stats.mlm_binary_title') }}</p>
+                        <p>{{ __('welcome.hero.stats.mlm_binary_sub') }}</p>
                     </div>
                     <div>
-                        <p class="title-font text-xl font-semibold text-slate-900">ISO 27001</p>
-                        <p>Güvenlik yaklaşımı</p>
+                        <p class="title-font text-xl font-semibold text-slate-900">{{ __('welcome.hero.stats.bagisto_title') }}</p>
+                        <p>{{ __('welcome.hero.stats.bagisto_sub') }}</p>
                     </div>
                     <div>
-                        <p class="title-font text-xl font-semibold text-slate-900">24/7</p>
-                        <p>Uzman destek</p>
+                        <p class="title-font text-xl font-semibold text-slate-900">{{ __('welcome.hero.stats.auto_member_title') }}</p>
+                        <p>{{ __('welcome.hero.stats.auto_member_sub') }}</p>
                     </div>
                     <div>
-                        <p class="title-font text-xl font-semibold text-slate-900">API-first</p>
-                        <p>Entegrasyon</p>
+                        <p class="title-font text-xl font-semibold text-slate-900">{{ __('welcome.hero.stats.career_bonus_title') }}</p>
+                        <p>{{ __('welcome.hero.stats.career_bonus_sub') }}</p>
                     </div>
                 </div>
             </div>
@@ -48,36 +44,36 @@
                 <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg">
                     <div class="rounded-2xl bg-slate-900 p-5 text-slate-200">
                         <div class="flex items-center justify-between text-xs text-slate-400">
-                            <span class="uppercase tracking-[0.2em]">Yönetim Paneli</span>
-                            <span>OnlyMLM Ops</span>
+                            <span class="uppercase tracking-[0.2em]">{{ __('welcome.hero.panel.title') }}</span>
+                            <span>{{ __('welcome.hero.panel.subtitle') }}</span>
                         </div>
                         <div class="mt-4 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
                             <div class="rounded-xl bg-slate-800/70 p-4">
-                                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">Network Health</p>
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ __('welcome.hero.panel.network_health') }}</p>
                                 <p class="mt-2 text-2xl font-semibold text-white">94.6%</p>
                                 <div class="mt-4 grid gap-2 text-xs text-slate-400">
                                     <div class="flex items-center justify-between">
-                                        <span>Binary yapı dengesi</span>
+                                        <span>{{ __('welcome.hero.panel.binary_balance') }}</span>
                                         <span class="text-emerald-300">+4.1%</span>
                                     </div>
                                     <div class="flex items-center justify-between">
-                                        <span>Ödeme güvenliği</span>
+                                        <span>{{ __('welcome.hero.panel.payment_security') }}</span>
                                         <span class="text-emerald-300">A+</span>
                                     </div>
                                     <div class="flex items-center justify-between">
-                                        <span>Aktif lisanslar</span>
+                                        <span>{{ __('welcome.hero.panel.active_licenses') }}</span>
                                         <span>128</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="rounded-xl bg-slate-950 p-4">
-                                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Gerçek Zamanlı</p>
-                                <p class="mt-2 text-lg font-semibold text-white">Gelir Akışı</p>
+                                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">{{ __('welcome.hero.panel.realtime') }}</p>
+                                <p class="mt-2 text-lg font-semibold text-white">{{ __('welcome.hero.panel.revenue_stream') }}</p>
                                 <div
                                     class="mt-4 h-24 rounded-lg bg-gradient-to-t from-teal-600/40 via-slate-800 to-slate-900 p-2">
                                     <div class="h-full w-full rounded-lg border border-slate-700/70"></div>
                                 </div>
-                                <p class="mt-3 text-xs text-slate-400">Kural tabanlı komisyon izleme</p>
+                                <p class="mt-3 text-xs text-slate-400">{{ __('welcome.hero.panel.commission_tracking') }}</p>
                             </div>
                         </div>
                     </div>
@@ -86,12 +82,10 @@
                 <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-lg">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Network Topolojisi</p>
-                            <p class="title-font mt-2 text-lg font-semibold text-slate-900">Binary &amp; MLM
-                                Diyagramı</p>
+                            <p class="text-xs uppercase tracking-[0.2em] text-slate-500">{{ __('welcome.hero.topology.title') }}</p>
+                            <p class="title-font mt-2 text-lg font-semibold text-slate-900">{{ __('welcome.hero.topology.subtitle') }}</p>
                         </div>
-                        <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">Kurumsal
-                            görünüm</span>
+                        <span class="rounded-full bg-slate-100 px-3 py-1 text-xs text-slate-600">{{ __('welcome.hero.topology.badge') }}</span>
                     </div>
                     <div class="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
                         <svg viewBox="0 0 360 170" class="h-40 w-full">
@@ -116,9 +110,9 @@
                             <circle cx="290" cy="140" r="12" fill="#1f2937" />
                         </svg>
                         <div class="mt-2 grid grid-cols-3 gap-2 text-xs text-slate-500">
-                            <span>Şeffaf kayıt</span>
-                            <span>Şube dengesi</span>
-                            <span>Denetlenebilir kurallar</span>
+                            <span>{{ __('welcome.hero.topology.transparent_enrollment') }}</span>
+                            <span>{{ __('welcome.hero.topology.branch_balance') }}</span>
+                            <span>{{ __('welcome.hero.topology.auditable_rules') }}</span>
                         </div>
                     </div>
                 </div>
@@ -132,31 +126,25 @@
         <div class="mx-auto w-full max-w-6xl px-6 py-20">
             <div class="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Neden OnlyMLM</p>
-                    <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">MLM mühendisliği için
-                        kurumsal yaklaşım</h2>
+                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.why.eyebrow') }}</p>
+                    <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">{{ __('welcome.why.title') }}</h2>
                 </div>
                 <p class="text-lg text-slate-600">
-                    OnlyMLM, karmaşık binary ağaçlarını otomatik dengeleyebilen, lisans ve komisyon kurallarını
-                    denetlenebilir hale getiren bir SaaS platformudur. Regülasyon uyumu, audit log altyapısı ve
-                    ölçeklenebilir bulut mimarisi sayesinde operasyonel riskleri en baştan minimize eder.
+                    {{ __('welcome.why.description') }}
                 </p>
             </div>
             <div class="mt-12 grid gap-6 md:grid-cols-3">
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                    <p class="title-font text-lg font-semibold text-slate-900">Kurumsal Güvenlik</p>
-                    <p class="mt-3 text-sm text-slate-600">Lisanslı erişim, rol bazlı yetkilendirme ve şifreli veri
-                        akışı.</p>
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.why.cards.control_title') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.why.cards.control_body') }}</p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                    <p class="title-font text-lg font-semibold text-slate-900">Sürdürülebilir Ölçek</p>
-                    <p class="mt-3 text-sm text-slate-600">Modüler altyapı ile yeni ülkeler ve ekipler için hızlı
-                        yayılım.</p>
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.why.cards.ownership_title') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.why.cards.ownership_body') }}</p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                    <p class="title-font text-lg font-semibold text-slate-900">Operasyonel Şeffaflık</p>
-                    <p class="mt-3 text-sm text-slate-600">Gerçek zamanlı raporlama ve denetlenebilir komisyon
-                        hesapları.</p>
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.why.cards.transparency_title') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.why.cards.transparency_body') }}</p>
                 </div>
             </div>
         </div>
@@ -165,13 +153,11 @@
     <section id="ozellikler" class="mx-auto w-full max-w-6xl px-6 py-20">
         <div class="flex flex-wrap items-end justify-between gap-6">
             <div>
-                <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Platform Özellikleri</p>
-                <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">Tek platform, çoklu
-                    kabiliyet</h2>
+                <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.features.eyebrow') }}</p>
+                <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">{{ __('welcome.features.title') }}</h2>
             </div>
             <p class="max-w-xl text-sm text-slate-600">
-                MLM/Binary motoru, Bagisto e-ticaret entegrasyonu ve API katmanı; lisanslı model, güvenlik ve performans
-                odağında tek bir mimaride birleşir.
+                {{ __('welcome.features.description') }}
             </p>
         </div>
         <div class="mt-12 grid gap-6 md:grid-cols-2">
@@ -179,9 +165,8 @@
                 <div class="flex items-center gap-3">
                     <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-600 text-white">ML</span>
                     <div>
-                        <p class="title-font text-lg font-semibold text-slate-900">MLM / Binary Motoru</p>
-                        <p class="text-sm text-slate-500">Kural tabanlı komisyon, otomatik denge ve performans
-                            optimizasyonu.</p>
+                        <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.features.items.engine_title') }}</p>
+                        <p class="text-sm text-slate-500">{{ __('welcome.features.items.engine_body') }}</p>
                     </div>
                 </div>
             </div>
@@ -189,9 +174,8 @@
                 <div class="flex items-center gap-3">
                     <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white">BG</span>
                     <div>
-                        <p class="title-font text-lg font-semibold text-slate-900">Bagisto E-Ticaret</p>
-                        <p class="text-sm text-slate-500">Lisanslı mağaza altyapısı, ürün ve ödeme yönetimiyle entegre.
-                        </p>
+                        <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.features.items.bagisto_title') }}</p>
+                        <p class="text-sm text-slate-500">{{ __('welcome.features.items.bagisto_body') }}</p>
                     </div>
                 </div>
             </div>
@@ -199,9 +183,8 @@
                 <div class="flex items-center gap-3">
                     <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-700 text-white">LC</span>
                     <div>
-                        <p class="title-font text-lg font-semibold text-slate-900">Lisanslama Katmanı</p>
-                        <p class="text-sm text-slate-500">Süre, ülke ve kullanıcı bazlı lisans yönetimi ve compliance.
-                        </p>
+                        <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.features.items.licensing_title') }}</p>
+                        <p class="text-sm text-slate-500">{{ __('welcome.features.items.licensing_body') }}</p>
                     </div>
                 </div>
             </div>
@@ -209,8 +192,8 @@
                 <div class="flex items-center gap-3">
                     <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-teal-700 text-white">API</span>
                     <div>
-                        <p class="title-font text-lg font-semibold text-slate-900">API &amp; Entegrasyon</p>
-                        <p class="text-sm text-slate-500">CRM, ödeme ve ERP sistemleriyle güvenli entegrasyon.</p>
+                        <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.features.items.api_title') }}</p>
+                        <p class="text-sm text-slate-500">{{ __('welcome.features.items.api_body') }}</p>
                     </div>
                 </div>
             </div>
@@ -221,29 +204,25 @@
         <div class="mx-auto w-full max-w-6xl px-6 py-20">
             <div class="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Nasıl Çalışır</p>
-                    <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">Net süreç, kontrollü
-                        yayılım</h2>
+                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.how.eyebrow') }}</p>
+                    <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">{{ __('welcome.how.title') }}</h2>
                 </div>
                 <p class="text-lg text-slate-600">
-                    Süreçler “indir-kur” değil, lisanslı ve güvenlik kontrollü bir devreye alma modeline dayanır.
-                    Her adımda teknik ekiplerinize eşlik ediyor, altyapıyı ölçeklenebilir hale getiriyoruz.
+                    {{ __('welcome.how.description') }}
                 </p>
             </div>
             <div class="mt-12 grid gap-6 md:grid-cols-3">
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                    <p class="title-font text-lg font-semibold text-slate-900">1. Lisanslı Satın Alım</p>
-                    <p class="mt-3 text-sm text-slate-600">Kurumsal lisanslama, kapsam ve SLA hedefleri netleşir.</p>
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.how.steps.one_title') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.how.steps.one_body') }}</p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                    <p class="title-font text-lg font-semibold text-slate-900">2. Kurulum &amp; Migrasyon</p>
-                    <p class="mt-3 text-sm text-slate-600">Veri taşınır, erişimler tanımlanır, güvenlik kontrolleri
-                        tamamlanır.</p>
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.how.steps.two_title') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.how.steps.two_body') }}</p>
                 </div>
                 <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-                    <p class="title-font text-lg font-semibold text-slate-900">3. Yayına Alma</p>
-                    <p class="mt-3 text-sm text-slate-600">Performans izleme, eğitim ve sürekli iyileştirme devreye
-                        girer.</p>
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.how.steps.three_title') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.how.steps.three_body') }}</p>
                 </div>
             </div>
         </div>
@@ -251,47 +230,97 @@
 
     <section id="fiyat" class="mx-auto w-full max-w-6xl px-6 py-20">
         <div class="text-center">
-            <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Şeffaf Fiyatlandırma</p>
-            <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">İşletmenize uygun lisans
-                modeli</h2>
-            <p class="mt-4 text-lg text-slate-600">Sözleşme, SLA ve güvenlik kapsamı net. Gizli maliyet yok.</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.pricing.eyebrow') }}</p>
+            <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">{{ __('welcome.pricing.title') }}</h2>
+            <p class="mt-4 text-lg text-slate-600">
+                {{ __('welcome.pricing.description') }}
+            </p>
         </div>
         <div class="mt-12 grid gap-6 lg:grid-cols-3">
             <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Core</p>
-                <p class="title-font mt-3 text-2xl font-semibold text-slate-900">Başlangıç</p>
-                <p class="title-font mt-2 text-3xl font-semibold text-slate-900">$4,900</p>
-                <p class="text-xs text-slate-500">aylık lisans</p>
-                <p class="mt-2 text-sm text-slate-600">Yeni operasyonlar için temel kurulum ve destek.</p>
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">{{ __('welcome.pricing.cards.self_eyebrow') }}</p>
+                <p class="title-font mt-3 text-2xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.self_title') }}</p>
+                <p class="title-font mt-2 text-3xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.self_price') }}</p>
+                <p class="mt-2 text-sm text-slate-600">
+                    {{ __('welcome.pricing.cards.self_body') }}
+                </p>
                 <ul class="mt-6 space-y-3 text-sm text-slate-600">
-                    <li>MLM/Binary motoru</li>
-                    <li>Temel raporlama</li>
-                    <li>Standart SLA</li>
+                    <li>{{ __('welcome.pricing.lists.self.0') }}</li>
+                    <li>{{ __('welcome.pricing.lists.self.1') }}</li>
+                    <li>{{ __('welcome.pricing.lists.self.2') }}</li>
+                    <li>{{ __('welcome.pricing.lists.self.3') }}</li>
+                    <li>{{ __('welcome.pricing.lists.self.4') }}</li>
                 </ul>
             </div>
             <div class="rounded-2xl border border-slate-900 bg-slate-900 p-8 text-white shadow-lg">
-                <p class="text-xs uppercase tracking-[0.2em] text-slate-300">Enterprise</p>
-                <p class="title-font mt-3 text-2xl font-semibold">Kurumsal</p>
-                <p class="title-font mt-2 text-3xl font-semibold">$12,900</p>
-                <p class="text-xs text-slate-300">aylık lisans</p>
-                <p class="mt-2 text-sm text-slate-200">Global ekipler ve yüksek hacimli operasyonlar.</p>
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-300">{{ __('welcome.pricing.cards.guided_eyebrow') }}</p>
+                <p class="title-font mt-3 text-2xl font-semibold">{{ __('welcome.pricing.cards.guided_title') }}</p>
+                <p class="title-font mt-2 text-3xl font-semibold">{{ __('welcome.pricing.cards.guided_price') }}</p>
+                <p class="mt-2 text-sm text-slate-200">
+                    {{ __('welcome.pricing.cards.guided_body') }}
+                </p>
                 <ul class="mt-6 space-y-3 text-sm text-slate-200">
-                    <li>Gelişmiş denetim &amp; audit log</li>
-                    <li>Bagisto entegrasyonu</li>
-                    <li>Öncelikli destek</li>
+                    <li>{{ __('welcome.pricing.lists.guided.0') }}</li>
+                    <li>{{ __('welcome.pricing.lists.guided.1') }}</li>
+                    <li>{{ __('welcome.pricing.lists.guided.2') }}</li>
+                    <li>{{ __('welcome.pricing.lists.guided.3') }}</li>
+                    <li>{{ __('welcome.pricing.lists.guided.4') }}</li>
                 </ul>
             </div>
             <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Custom</p>
-                <p class="title-font mt-3 text-2xl font-semibold text-slate-900">Özel</p>
-                <p class="title-font mt-2 text-3xl font-semibold text-slate-900">$24,900+</p>
-                <p class="text-xs text-slate-500">aylık lisans</p>
-                <p class="mt-2 text-sm text-slate-600">Regülasyon ve entegrasyon ihtiyaçlarına özel.</p>
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-500">{{ __('welcome.pricing.cards.done_eyebrow') }}</p>
+                <p class="title-font mt-3 text-2xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.done_title') }}</p>
+                <p class="title-font mt-2 text-3xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.done_price') }}</p>
+                <p class="mt-2 text-sm text-slate-600">
+                    {{ __('welcome.pricing.cards.done_body') }}
+                </p>
                 <ul class="mt-6 space-y-3 text-sm text-slate-600">
-                    <li>API &amp; ERP entegrasyonu</li>
-                    <li>Özel güvenlik kontrolleri</li>
-                    <li>Yerinde danışmanlık</li>
+                    <li>{{ __('welcome.pricing.lists.done.0') }}</li>
+                    <li>{{ __('welcome.pricing.lists.done.1') }}</li>
+                    <li>{{ __('welcome.pricing.lists.done.2') }}</li>
+                    <li>{{ __('welcome.pricing.lists.done.3') }}</li>
+                    <li>{{ __('welcome.pricing.lists.done.4') }}</li>
                 </ul>
+            </div>
+        </div>
+        <p class="text-xs text-slate-500 mt-6">
+            {{ __('welcome.pricing.note') }}
+        </p>
+    </section>
+
+    <section id="faq" class="border-t border-slate-200 bg-white">
+        <div class="mx-auto w-full max-w-6xl px-6 py-20">
+            <div class="mb-12 text-center">
+                <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.faq.eyebrow') }}</p>
+                <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">
+                    {{ __('welcome.faq.title') }}
+                </h2>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2">
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.faq.q1') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.faq.a1') }}</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.faq.q2') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.faq.a2') }}</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.faq.q3') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.faq.a3') }}</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.faq.q4') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.faq.a4') }}</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.faq.q5') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.faq.a5') }}</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <p class="title-font text-lg font-semibold text-slate-900">{{ __('welcome.faq.q6') }}</p>
+                    <p class="mt-3 text-sm text-slate-600">{{ __('welcome.faq.a6') }}</p>
+                </div>
             </div>
         </div>
     </section>
@@ -300,31 +329,28 @@
         <div class="mx-auto w-full max-w-6xl px-6 py-20">
             <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Demo</p>
-                    <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">Kurumsal demo isteyin
-                    </h2>
+                    <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.demo.eyebrow') }}</p>
+                    <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">{{ __('welcome.demo.title') }}</h2>
                     <p class="mt-4 text-lg text-slate-600">
-                        Lisanslı ve güvenli OnlyMLM altyapısını operasyonunuza uygun şekilde birlikte tasarlayalım.
-                        Demo oturumunda güvenlik, performans ve entegrasyon yeteneklerini detaylı olarak gösteriyoruz.
+                        {{ __('welcome.demo.description') }}
                     </p>
                 </div>
                 <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
                     <form class="grid gap-4">
                         <input
                             class="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:border-teal-600 focus:outline-none"
-                            placeholder="Şirket adı">
+                            placeholder="{{ __('welcome.demo.form.company') }}">
                         <input
                             class="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:border-teal-600 focus:outline-none"
-                            placeholder="Kurumsal e-posta">
+                            placeholder="{{ __('welcome.demo.form.email') }}">
                         <input
                             class="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:border-teal-600 focus:outline-none"
-                            placeholder="Operasyon ölçeği (ülke / ekip)">
+                            placeholder="{{ __('welcome.demo.form.scale') }}">
                         <button type="button"
                             class="rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
-                            Demo Talep Et
+                            {{ __('welcome.demo.form.submit') }}
                         </button>
-                        <p class="text-xs text-slate-500">Başvurular 24 saat içinde teknik ekip tarafından geri dönüş
-                            alır.</p>
+                        <p class="text-xs text-slate-500">{{ __('welcome.demo.form.note') }}</p>
                     </form>
                 </div>
             </div>

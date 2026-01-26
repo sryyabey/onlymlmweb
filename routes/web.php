@@ -2,6 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 
+Route::get('locale/{locale}', function (string $locale) {
+    if (! in_array($locale, ['en', 'tr'], true)) {
+        abort(404);
+    }
+
+    session(['locale' => $locale]);
+    app()->setLocale($locale);
+
+    return redirect()->back();
+})->name('locale.switch');
+
 Route::view('/', 'welcome')->name('home');
 
 Route::view('dashboard', 'dashboard')

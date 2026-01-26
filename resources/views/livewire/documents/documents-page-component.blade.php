@@ -114,7 +114,7 @@
                                                 </a>
                                             </h3>
                                             <p class="text-sm leading-6 text-slate-600">
-                                                {{ \Illuminate\Support\Str::limit($content->excerpt ?? $content->body, 180) }}
+                                                {!! \Illuminate\Support\Str::limit($content->excerpt ?? $content->body, 180) !!}
                                             </p>
                                             <div class="flex flex-wrap gap-2">
                                                 @foreach ($content->categories as $contentCategory)

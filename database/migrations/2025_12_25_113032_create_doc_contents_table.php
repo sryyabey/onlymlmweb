@@ -12,10 +12,10 @@ return new class extends Migration {
     {
         Schema::create('doc_contents', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->json('title');
             $table->string('slug')->unique();
-            $table->text('excerpt')->nullable();
-            $table->longText('body')->nullable();
+            $table->json('excerpt')->nullable();
+            $table->json('body')->nullable();
             $table->string('seo_keywords')->nullable();
             $table->string('seo_description')->nullable();
             $table->string('seo_title')->nullable();

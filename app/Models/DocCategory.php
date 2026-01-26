@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Spatie\Translatable\HasTranslations;
 
 class DocCategory extends Model
 {
+    use HasTranslations;
     protected $fillable = [
         'name',
         'slug',
@@ -14,6 +16,11 @@ class DocCategory extends Model
         'image',
         'description',
         'sort_order',
+    ];
+
+    public $translatable = [
+        'name',
+        'description',
     ];
 
     protected $casts = [
