@@ -78,6 +78,7 @@ class DocTagSeeder extends Seeder
                 'updated_at' => now(),
             ],
             [
+
                 'name' => 'FAQ',
                 'slug' => 'faq',
                 'is_active' => true,
