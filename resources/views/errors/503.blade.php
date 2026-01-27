@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>503 | Hizmet Geçici Olarak Kullanılamıyor</title>
+        <title>503 | Yapım Aşamasında</title>
         @vite('resources/css/app.css')
     </head>
     <body class="min-h-screen bg-slate-950 text-slate-100">
@@ -16,14 +16,14 @@
 
             <section class="relative mx-auto flex min-h-screen max-w-5xl flex-col items-start justify-center px-6 py-16">
                 <span class="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-4 py-1 text-sm font-semibold tracking-wide text-cyan-200">
-                    Sistem Bakımda
+                    Yapım Aşamasında
                 </span>
                 <h1 class="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                    503 — Hizmet geçici olarak kullanılamıyor
+                    503 — Şu anda yapım aşamasındayız
                 </h1>
                 <p class="mt-4 max-w-2xl text-lg text-slate-200/80">
-                    Şu anda planlı bakım veya yoğunluk sebebiyle sunucularımıza erişim sağlayamıyoruz.
-                    Kısa süre içinde tekrar deneyebilirsiniz.
+                    Sayfamız üzerinde çalışıyoruz. Kısa süre içinde yepyeni bir deneyimle geri döneceğiz.
+                    Lütfen biraz sonra tekrar ziyaret edin.
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-4">
@@ -48,7 +48,7 @@
                             Durum
                         </p>
                         <p class="mt-3 text-base text-slate-200">
-                            Sistem güncelleme çalışmaları sürüyor.
+                            Yeni özellikler ve tasarım güncellemeleri hazırlanıyor.
                         </p>
                     </div>
                     <div>
@@ -56,13 +56,13 @@
                             Tahmini süre
                         </p>
                         <p class="mt-3 text-base text-slate-200">
-                            15-30 dakika içinde tekrar yayında olacağız.
+                            Kısa süre içinde yayına alınacak.
                         </p>
                     </div>
                 </div>
 
                 <p class="mt-10 text-sm text-slate-400">
-                    Acil bir durumda bizimle iletişime geçebilirsiniz: 
+                    Güncellemeler için bizimle iletişime geçebilirsiniz:
                     <span class="text-slate-200">support@onlymlm.com</span>
                 </p>
             </section>
