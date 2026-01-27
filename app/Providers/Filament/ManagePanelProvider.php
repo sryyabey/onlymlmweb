@@ -56,7 +56,7 @@ class ManagePanelProvider extends PanelProvider
             ])
             ->plugins([
                 FilamentShieldPlugin::make(),
-                SpatieTranslatablePlugin::make()->defaultLocales(['en', 'tr']),
+                SpatieTranslatablePlugin::make()->defaultLocales(['en', 'tr', 'es', 'fr', 'pt']),
             ])
             ->authMiddleware([
                 Authenticate::class,

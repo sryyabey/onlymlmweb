@@ -15,7 +15,7 @@ class SetLocale
     {
         $locale = $request->session()->get('locale', config('app.locale'));
 
-        if (! in_array($locale, ['en', 'tr'], true)) {
+        if (!in_array($locale, ['en', 'tr', 'es', 'fr', 'pt'], true)) {
             $locale = config('app.fallback_locale', 'en');
         }
 

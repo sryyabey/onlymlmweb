@@ -3,7 +3,15 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('locale/{locale}', function (string $locale) {
-    if (! in_array($locale, ['en', 'tr'], true)) {
+    if (
+        !in_array($locale, [
+            'en',
+            'tr',
+            'es',
+            'fr',
+            'pt'
+        ], true)
+    ) {
         abort(404);
     }
 
