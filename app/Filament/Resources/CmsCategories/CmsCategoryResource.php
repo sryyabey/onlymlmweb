@@ -1,0 +1,48 @@
+<?php
+
+namespace App\Filament\Resources\CmsCategories;
+
+use App\Filament\Resources\CmsCategories\Pages\CreateCmsCategory;
+use App\Filament\Resources\CmsCategories\Pages\EditCmsCategory;
+use App\Filament\Resources\CmsCategories\Pages\ListCmsCategories;
+use App\Filament\Resources\CmsCategories\Schemas\CmsCategoryForm;
+use App\Filament\Resources\CmsCategories\Tables\CmsCategoriesTable;
+use App\Models\CmsCategory;
+use BackedEnum;
+use Filament\Resources\Resource;
+use Filament\Schemas\Schema;
+use Filament\Support\Icons\Heroicon;
+use Filament\Tables\Table;
+
+class CmsCategoryResource extends Resource
+{
+    protected static ?string $model = CmsCategory::class;
+
+    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
+
+    public static function form(Schema $schema): Schema
+    {
+        return CmsCategoryForm::configure($schema);
+    }
+
+    public static function table(Table $table): Table
+    {
+        return CmsCategoriesTable::configure($table);
+    }
+
+    public static function getRelations(): array
+    {
+        return [
+            //
+        ];
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListCmsCategories::route('/'),
+            'create' => CreateCmsCategory::route('/create'),
+            'edit' => EditCmsCategory::route('/{record}/edit'),
+        ];
+    }
+}

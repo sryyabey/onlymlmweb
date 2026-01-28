@@ -122,7 +122,7 @@
 @endsection
 
 @section('content')
-    <section id="neden-onlymlm" class="grid-pattern border-y border-slate-200 bg-white">
+    <section id="why-onlymlm" class="grid-pattern border-y border-slate-200 bg-white">
         <div class="mx-auto w-full max-w-6xl px-6 py-20">
             <div class="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
                 <div>
@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <section id="ozellikler" class="mx-auto w-full max-w-6xl px-6 py-20">
+    <section id="features" class="mx-auto w-full max-w-6xl px-6 py-20">
         <div class="flex flex-wrap items-end justify-between gap-6">
             <div>
                 <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.features.eyebrow') }}</p>
@@ -200,7 +200,7 @@
         </div>
     </section>
 
-    <section id="nasil-calisir" class="border-y border-slate-200 bg-white">
+    <section id="how-it-works" class="border-y border-slate-200 bg-white">
         <div class="mx-auto w-full max-w-6xl px-6 py-20">
             <div class="grid gap-8 lg:grid-cols-[1fr_1.1fr]">
                 <div>
@@ -228,7 +228,7 @@
         </div>
     </section>
 
-    <section id="fiyat" class="mx-auto w-full max-w-6xl px-6 py-20">
+    <section id="pricing" class="mx-auto w-full max-w-6xl px-6 py-20">
         <div class="text-center">
             <p class="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">{{ __('welcome.pricing.eyebrow') }}</p>
             <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900 md:text-4xl">{{ __('welcome.pricing.title') }}</h2>

@@ -15,13 +15,13 @@
         </div>
     </a>
     <div class="hidden items-center gap-8 text-sm text-slate-600 md:flex">
-        <a href="{{ route('home') }}#neden-onlymlm"
+        <a href="{{ route('home') }}#why-onlymlm"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.why') }}</a>
-        <a href="{{ route('home') }}#ozellikler"
+        <a href="{{ route('home') }}#features"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.platform') }}</a>
-        <a href="{{ route('home') }}#nasil-calisir"
+        <a href="{{ route('home') }}#how-it-works"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.how') }}</a>
-        <a href="{{ route('home') }}#fiyat"
+        <a href="{{ route('home') }}#pricing"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.pricing') }}</a>
         <a href="{{ route('documents') }}"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.documents') }}</a>
@@ -89,7 +89,7 @@
         <div
             class="absolute right-0 z-50 mt-3 w-56 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-600 shadow-lg">
             <div class="flex flex-col gap-1">
-                <a href="{{ route('home') }}#neden-onlymlm"
+                <a href="{{ route('home') }}#why-onlymlm"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.why') }}</a>
                 <a href="{{ route('home') }}#ozellikler"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.platform') }}</a>

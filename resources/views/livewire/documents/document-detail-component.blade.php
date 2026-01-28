@@ -81,7 +81,7 @@
                             </p>
                         @endif
 
-                        <article class="prose prose-slate max-w-none">
+                        <article class="prose prose-slate max-w-none content-body">
                             {!! $content->body !!}
                         </article>
 
