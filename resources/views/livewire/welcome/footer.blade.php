@@ -11,6 +11,6 @@
                 <span>{{ __('layout.footer.scalable') }}</span>
             </div>
         </div>
-        <p class="mt-8 text-xs text-slate-500">{{ __('layout.footer.copyright') }}</p>
+        <p class="mt-8 text-xs text-slate-500">© {{ now()->year }} OnlyMLM. {{ __('layout.footer.rights') }}</p>
     </div>
 </footer>

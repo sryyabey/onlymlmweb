@@ -11,11 +11,11 @@
                     {{ __('welcome.hero.description') }}
                 </p>
                 <div class="mt-8 flex flex-wrap items-center gap-4">
-                    <a href="#fiyat"
+                    <a href="#pricing"
                         class="rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700">
                         {{ __('welcome.hero.cta_primary') }}
                     </a>
-                    <a href="#nasil-calisir"
+                    <a href="#features"
                         class="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">
                         {{ __('welcome.hero.cta_secondary') }}
                     </a>
@@ -50,19 +50,19 @@
                         <div class="mt-4 grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
                             <div class="rounded-xl bg-slate-800/70 p-4">
                                 <p class="text-xs uppercase tracking-[0.2em] text-slate-400">{{ __('welcome.hero.panel.network_health') }}</p>
-                                <p class="mt-2 text-2xl font-semibold text-white">94.6%</p>
+                                <p class="mt-2 text-2xl font-semibold text-white">{{ __('welcome.hero.panel.configurable') }}</p>
                                 <div class="mt-4 grid gap-2 text-xs text-slate-400">
                                     <div class="flex items-center justify-between">
                                         <span>{{ __('welcome.hero.panel.binary_balance') }}</span>
-                                        <span class="text-emerald-300">+4.1%</span>
+                                        <span class="text-emerald-300">{{ __('welcome.hero.panel.rule_based') }}</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <span>{{ __('welcome.hero.panel.payment_security') }}</span>
-                                        <span class="text-emerald-300">A+</span>
+                                        <span class="text-emerald-300">{{ __('welcome.hero.panel.auditable') }}</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <span>{{ __('welcome.hero.panel.active_licenses') }}</span>
-                                        <span>128</span>
+                                        <span>{{ __('welcome.hero.panel.domain_based') }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -237,7 +237,7 @@
             </p>
         </div>
         <div class="mt-12 grid gap-6 lg:grid-cols-3">
-            <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div id="marketplace" class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-500">{{ __('welcome.pricing.cards.self_eyebrow') }}</p>
                 <p class="title-font mt-3 text-2xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.self_title') }}</p>
                 <p class="title-font mt-2 text-3xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.self_price') }}</p>
@@ -251,6 +251,10 @@
                     <li>{{ __('welcome.pricing.lists.self.3') }}</li>
                     <li>{{ __('welcome.pricing.lists.self.4') }}</li>
                 </ul>
+                <span
+                    class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-slate-100 px-5 py-3 text-sm font-semibold text-slate-600">
+                    {{ __('welcome.pricing.cards.self_cta') }}
+                </span>
             </div>
             <div class="rounded-2xl border border-slate-900 bg-slate-900 p-8 text-white shadow-lg">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-300">{{ __('welcome.pricing.cards.guided_eyebrow') }}</p>
@@ -266,6 +270,10 @@
                     <li>{{ __('welcome.pricing.lists.guided.3') }}</li>
                     <li>{{ __('welcome.pricing.lists.guided.4') }}</li>
                 </ul>
+                <a href="mailto:support@onlymlm.com?subject=OnlyMLM%20Professional%20License"
+                    class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100">
+                    {{ __('welcome.pricing.cards.guided_cta') }}
+                </a>
             </div>
             <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-500">{{ __('welcome.pricing.cards.done_eyebrow') }}</p>
@@ -281,6 +289,10 @@
                     <li>{{ __('welcome.pricing.lists.done.3') }}</li>
                     <li>{{ __('welcome.pricing.lists.done.4') }}</li>
                 </ul>
+                <a href="mailto:support@onlymlm.com?subject=OnlyMLM%20Enterprise%20License"
+                    class="mt-8 inline-flex w-full items-center justify-center rounded-xl border border-slate-300 px-5 py-3 text-sm font-semibold text-slate-800 transition hover:border-slate-400 hover:bg-slate-50">
+                    {{ __('welcome.pricing.cards.done_cta') }}
+                </a>
             </div>
         </div>
         <p class="text-xs text-slate-500 mt-6">
@@ -325,7 +337,7 @@
         </div>
     </section>
 
-    <section id="demo" class="border-t border-slate-200 bg-white">
+    <section id="enterprise" class="border-t border-slate-200 bg-white">
         <div class="mx-auto w-full max-w-6xl px-6 py-20">
             <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
                 <div>
@@ -335,23 +347,17 @@
                         {{ __('welcome.demo.description') }}
                     </p>
                 </div>
-                <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-                    <form class="grid gap-4">
-                        <input
-                            class="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:border-teal-600 focus:outline-none"
-                            placeholder="{{ __('welcome.demo.form.company') }}">
-                        <input
-                            class="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:border-teal-600 focus:outline-none"
-                            placeholder="{{ __('welcome.demo.form.email') }}">
-                        <input
-                            class="rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:border-teal-600 focus:outline-none"
-                            placeholder="{{ __('welcome.demo.form.scale') }}">
-                        <button type="button"
-                            class="rounded-xl bg-slate-900 px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">
-                            {{ __('welcome.demo.form.submit') }}
-                        </button>
-                        <p class="text-xs text-slate-500">{{ __('welcome.demo.form.note') }}</p>
-                    </form>
+                <div class="rounded-3xl border border-slate-200 bg-slate-950 p-8 text-white shadow-lg">
+                    <p class="text-xs font-semibold uppercase tracking-[0.25em] text-teal-300">
+                        {{ __('welcome.demo.form.eyebrow') }}
+                    </p>
+                    <p class="title-font mt-4 text-2xl font-semibold">{{ __('welcome.demo.form.title') }}</p>
+                    <p class="mt-3 text-sm leading-6 text-slate-300">{{ __('welcome.demo.form.body') }}</p>
+                    <a href="mailto:support@onlymlm.com?subject=OnlyMLM%20Enterprise%20License"
+                        class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100">
+                        {{ __('welcome.demo.form.submit') }}
+                    </a>
+                    <p class="mt-4 text-xs text-slate-400">{{ __('welcome.demo.form.note') }}</p>
                 </div>
             </div>
         </div>

@@ -2,23 +2,23 @@
 
 return [
     'nav' => [
-        'tagline' => 'SaaS corporativo',
+        'tagline' => 'Software auto-hospedado',
         'why' => 'Por que OnlyMLM',
         'platform' => 'Plataforma',
         'how' => 'Como funciona',
         'pricing' => 'Preços',
         'documents' => 'Documentação',
-        'demo' => 'Demo',
+        'demo' => 'Empresarial',
         'menu' => 'Menu',
-        'request_demo' => 'Solicitar demo',
+        'request_demo' => 'Ver licenças',
         'language' => 'Idioma',
     ],
     'footer' => [
-        'description' => 'Infraestrutura SaaS de MLM e Binário em nível corporativo.',
-        'licensed' => 'Uso licenciado',
+        'description' => 'Software auto-hospedado para venda direta, ecommerce e operações binárias.',
+        'licensed' => 'Licença de pagamento único',
         'security' => 'Foco em segurança',
         'scalable' => 'Arquitetura escalável',
-        'copyright' => '© 2024 OnlyMLM. Todos os direitos reservados.',
+        'rights' => 'Todos os direitos reservados.',
     ],
     'back_to_top' => 'Voltar ao topo',
 ];

@@ -2,23 +2,23 @@
 
 return [
     'nav' => [
-        'tagline' => 'Kurumsal SaaS',
+        'tagline' => 'Self-Hosted Yazılım',
         'why' => 'Neden OnlyMLM',
         'platform' => 'Platform',
         'how' => 'Nasıl Çalışır',
         'pricing' => 'Fiyatlandırma',
         'documents' => 'Dokümantasyon',
-        'demo' => 'Demo',
+        'demo' => 'Kurumsal',
         'menu' => 'Menü',
-        'request_demo' => 'Demo',
+        'request_demo' => 'Lisansları Gör',
         'language' => 'Dil',
     ],
     'footer' => [
-        'description' => 'Enterprise seviyede MLM & Binary SaaS altyapısı.',
-        'licensed' => 'Lisanslı kullanım',
+        'description' => 'Kendi sunucunuzda çalışan doğrudan satış, e-ticaret ve binary operasyon yazılımı.',
+        'licensed' => 'Tek seferlik lisans',
         'security' => 'Güvenlik odaklı',
         'scalable' => 'Ölçeklenebilir mimari',
-        'copyright' => '© 2024 OnlyMLM. Tüm hakları saklıdır.',
+        'rights' => 'Tüm hakları saklıdır.',
     ],
     'back_to_top' => 'Yukarı çık',
 ];

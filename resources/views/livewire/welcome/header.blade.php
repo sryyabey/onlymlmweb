@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        @yield('title', 'OnlyMLM | Enterprise-Grade MLM & Binary Platform')
+        @yield('title', 'OnlyMLM | Self-Hosted Direct Selling Software')
     </title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -73,7 +73,7 @@
                 </div>
             </div>
         </details>
-        <a href="#demo"
+        <a href="{{ route('home') }}#pricing"
             class="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">{{ __('layout.nav.request_demo') }}</a>
     </div>
     <details class="relative md:hidden">
@@ -91,13 +91,13 @@
             <div class="flex flex-col gap-1">
                 <a href="{{ route('home') }}#why-onlymlm"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.why') }}</a>
-                <a href="{{ route('home') }}#ozellikler"
+                <a href="{{ route('home') }}#features"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.platform') }}</a>
-                <a href="{{ route('home') }}#nasil-calisir"
+                <a href="{{ route('home') }}#how-it-works"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.how') }}</a>
-                <a href="{{ route('home') }}#fiyat"
+                <a href="{{ route('home') }}#pricing"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.pricing') }}</a>
-                <a href="{{ route('home') }}#demo"
+                <a href="{{ route('home') }}#enterprise"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.demo') }}</a>
                 <a href="{{ route('documents') }}"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.documents') }}</a>
@@ -152,7 +152,7 @@
                 </details>
             </div>
             <div class="mt-4">
-                <a href="{{ route('home') }}#demo"
+                <a href="{{ route('home') }}#pricing"
                     class="inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-800">
                     {{ __('layout.nav.request_demo') }}
                 </a>
