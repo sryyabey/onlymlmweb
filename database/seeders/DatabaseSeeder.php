@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             DocTagSeeder::class,
             DocCategorySeeder::class,
+            LicensingSeeder::class,
         ]);
 
         User::factory()->create([

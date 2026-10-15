@@ -1,6 +1,12 @@
 <?php
 
 return [
+    'live_demo' => [
+        'eyebrow' => 'Demo en vivo',
+        'title' => 'Descubre OnlyMLM en acción',
+        'description' => 'Visita nuestra tienda de demostración con productos de ejemplo. Explora las funciones de MLM, red binaria y carreras.',
+        'button' => 'Explorar la demo',
+    ],
     'hero' => [
         'tagline' => 'Script – Licenciado – En tu propio servidor',
         'title' => 'Script Profesional MLM y Binario',

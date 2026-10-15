@@ -1,6 +1,12 @@
 <?php
 
 return [
+    'live_demo' => [
+        'eyebrow' => 'Canlı Demo',
+        'title' => 'OnlyMLM’i çalışırken inceleyin',
+        'description' => 'Örnek ürünlerle hazırlanmış demo mağazamızı ziyaret edin. MLM, binary ağ ve kariyer özelliklerini keşfedin.',
+        'button' => 'Canlı Demoyu İncele',
+    ],
     'hero' => [
         'tagline' => 'Self-Hosted • Tek Seferlik Lisans • Tam Kontrol',
         'title' => 'Kontrolü Size Ait Doğrudan Satış ve MLM Yazılımı',

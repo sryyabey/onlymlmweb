@@ -1,3 +1,48 @@
+# onlyMlm Web
+
+onlymlm.com kurumsal web uygulaması ve merkezi onlyMlm lisans servisidir.
+
+## Lisans servisi
+
+Lisanslar `/manage/licenses` ekranından oluşturulur. Varsayılan `onlymlm-bagisto` ürünü için Starter, Professional ve Enterprise planları `LicensingSeeder` tarafından hazırlanır.
+
+Ed25519 imza anahtarlarını bir kez üretin ve çıktıyı production `.env` dosyasına ekleyin. Private key yalnızca onlymlm.com sunucusunda tutulmalıdır:
+
+```bash
+php artisan license:keys
+```
+
+Yerel kurulumda anahtarları terminale yazdırmadan doğrudan `.env` dosyasına kaydetmek için `php artisan license:keys --write` kullanılabilir.
+
+```dotenv
+LICENSE_PRODUCT=onlymlm-bagisto
+LICENSE_GRACE_DAYS=7
+LICENSE_SIGNING_PRIVATE_KEY=base64-private-key
+LICENSE_SIGNING_PUBLIC_KEY=base64-public-key
+```
+
+Kurulum:
+
+```bash
+php artisan migrate --force
+php artisan db:seed --class=LicensingSeeder --force
+```
+
+API endpointleri `POST` ve `throttle:licensing` korumalıdır:
+
+```text
+/api/v1/licenses/activate
+/api/v1/licenses/validate
+/api/v1/licenses/heartbeat
+/api/v1/licenses/deactivate
+```
+
+Aktivasyon; lisans anahtarı, ürün kodu, installation ID, domain, environment ve uygulama sürümlerini kabul eder. Başarılı cevap Ed25519 imzalı lisans belgesi ve okunabilir payload döndürür. Lisans anahtarının SHA-256 hash'i arama için, görüntülenebilir kopyası Laravel `encrypted` cast ile korunur.
+
+Production/staging domain limitleri plan üzerinden uygulanır. Lisans süresi bittikten sonra grace süresince belge `grace_period` durumuyla döner. Askıya alınan, iptal edilen veya grace süresi geçen lisanslar reddedilir. Aktivasyon, doğrulama ve deaktivasyon hareketleri `license_events` tablosunda tutulur.
+
+---
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">

@@ -1,6 +1,12 @@
 <?php
 
 return [
+    'live_demo' => [
+        'eyebrow' => 'Live Demo',
+        'title' => 'See OnlyMLM in action',
+        'description' => 'Visit our demo store with sample products. Explore MLM, binary network and career features.',
+        'button' => 'Explore the Live Demo',
+    ],
     'hero' => [
         'tagline' => 'Self-Hosted • One-Time License • Full Control',
         'title' => 'Direct Selling & MLM Software You Control',

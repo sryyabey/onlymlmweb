@@ -19,6 +19,10 @@
                         class="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">
                         {{ __('welcome.hero.cta_secondary') }}
                     </a>
+                    <a href="https://demo.onlymlm.com" target="_blank" rel="noopener noreferrer"
+                        class="rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">
+                        {{ __('welcome.live_demo.button') }}
+                    </a>
                 </div>
                 <div class="mt-10 grid grid-cols-2 gap-6 text-sm text-slate-500 md:grid-cols-4">
                     <div>
@@ -334,6 +338,21 @@
                     <p class="mt-3 text-sm text-slate-600">{{ __('welcome.faq.a6') }}</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="demo" class="border-t border-slate-200 bg-teal-50">
+        <div class="mx-auto grid max-w-6xl gap-8 px-6 py-16 md:grid-cols-[1fr_auto] md:items-center">
+            <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.25em] text-teal-700">{{ __('welcome.live_demo.eyebrow') }}</p>
+                <h2 class="title-font mt-4 text-3xl font-semibold text-slate-900">{{ __('welcome.live_demo.title') }}</h2>
+                <p class="mt-4 max-w-3xl text-lg text-slate-600">{{ __('welcome.live_demo.description') }}</p>
+            </div>
+            <a href="https://demo.onlymlm.com" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center justify-center rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700">
+                {{ __('welcome.live_demo.button') }}
+                <span class="ml-2" aria-hidden="true">↗</span>
+            </a>
         </div>
     </section>
 
