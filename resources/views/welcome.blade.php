@@ -389,7 +389,7 @@
                     </p>
                     <p class="title-font mt-4 text-2xl font-semibold">{{ __('welcome.demo.form.title') }}</p>
                     <p class="mt-3 text-sm leading-6 text-slate-300">{{ __('welcome.demo.form.body') }}</p>
-                    <a href="mailto:support@onlymlm.com?subject=OnlyMLM%20Enterprise%20License"
+                    <a href="mailto:info@sryya.dev?subject=OnlyMLM%20Enterprise%20License"
                         class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100">
                         {{ __('welcome.demo.form.submit') }}
                     </a>
