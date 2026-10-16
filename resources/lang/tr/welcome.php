@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'seo' => [
+        'title' => 'OnlyMLM | MLM ve Doğrudan Satış Yazılımı',
+        'description' => 'E-ticaret, binary ağ, üye yerleşimi, kariyer ve prim süreçlerinizi OnlyMLM ile yönetin. Kaynak kodu teslim edilen, tek seferlik lisanslı MLM yazılımı.',
+    ],
     'live_demo' => [
         'eyebrow' => 'Canlı Demo',
         'title' => 'OnlyMLM’i çalışırken inceleyin',

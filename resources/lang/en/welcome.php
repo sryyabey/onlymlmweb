@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'seo' => [
+        'title' => 'OnlyMLM | Self-Hosted MLM & Direct Selling Software',
+        'description' => 'Manage e-commerce, binary networks, member placement, commissions and careers with OnlyMLM. Self-hosted MLM software with source code and a one-time license.',
+    ],
     'live_demo' => [
         'eyebrow' => 'Live Demo',
         'title' => 'See OnlyMLM in action',

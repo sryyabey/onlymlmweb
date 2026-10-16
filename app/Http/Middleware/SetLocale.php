@@ -13,7 +13,14 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next)
     {
-        $locale = $request->session()->get('locale', config('app.locale'));
+        // Public home variants must render independently of a visitor's session.
+        $locale = $request->is('/')
+            ? $request->query('lang', config('seo.default_locale', 'en'))
+            : $request->session()->get('locale', config('seo.default_locale', 'en'));
+
+        if ($request->is('/') && !in_array($locale, ['en', 'tr', 'es', 'fr', 'pt'], true)) {
+            abort(404);
+        }
 
         if (!in_array($locale, ['en', 'tr', 'es', 'fr', 'pt'], true)) {
             $locale = config('app.fallback_locale', 'en');

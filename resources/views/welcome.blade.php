@@ -1,4 +1,8 @@
 @extends('livewire.welcome.app')
+@section('title', __('welcome.seo.title'))
+@section('seo')
+    @include('livewire.welcome.seo')
+@endsection
 @section('hero')
     <section class="relative  mx-auto w-full max-w-6xl px-6 pb-20 pt-10 md:pt-20">
         <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">

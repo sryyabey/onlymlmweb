@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'seo' => [
+        'title' => 'OnlyMLM | Logiciel MLM et Vente Directe',
+        'description' => 'Gérez e-commerce, réseaux binaires, membres, commissions et carrières avec OnlyMLM. Logiciel MLM sur votre serveur, avec code source et licence unique.',
+    ],
     'live_demo' => [
         'eyebrow' => 'Démo en ligne',
         'title' => 'Découvrez OnlyMLM en action',
