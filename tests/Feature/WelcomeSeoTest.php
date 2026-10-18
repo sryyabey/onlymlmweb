@@ -26,6 +26,26 @@ class WelcomeSeoTest extends TestCase
             ->assertOk()->assertSee('<html lang="en">', false);
     }
 
+    public function test_home_navigation_preserves_the_selected_language(): void
+    {
+        foreach (['en', 'tr', 'es', 'fr', 'pt'] as $locale) {
+            $homeUrl = route('home', $locale === 'en' ? [] : ['lang' => $locale]);
+            $response = $this->get('/?lang='.$locale)->assertOk();
+
+            $response->assertSee('href="'.$homeUrl.'"', false);
+
+            foreach (['why-onlymlm', 'features', 'how-it-works', 'pricing', 'enterprise'] as $section) {
+                $response->assertSee('href="'.$homeUrl.'#'.$section.'"', false);
+            }
+
+            if ($locale !== 'en') {
+                $response->assertDontSee('href="'.route('home').'#', false);
+            }
+
+            $this->get($homeUrl)->assertOk()->assertSee('<html lang="'.$locale.'">', false);
+        }
+    }
+
     public function test_sitemap_contains_all_five_canonical_home_urls(): void
     {
         config(['app.url' => 'https://onlymlm.com', 'seo.default_locale' => 'en']);

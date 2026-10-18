@@ -1,7 +1,11 @@
+@php
+    $homeUrl = route('home', app()->getLocale() === config('seo.default_locale', 'en') ? [] : ['lang' => app()->getLocale()]);
+@endphp
+
 @php($currentLocale = app()->getLocale())
 <nav
     class="fixed left-0 right-0 top-0 z-50 mx-auto flex w-full max-w-6xl items-center justify-between border-b border-slate-200 bg-white/90 px-6 py-4 backdrop-blur">
-    <a href="{{ route('home') }}">
+    <a href="{{ $homeUrl }}">
         <div class="flex items-center gap-3">
 
             <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white shadow-sm">
@@ -15,13 +19,13 @@
         </div>
     </a>
     <div class="hidden items-center gap-8 text-sm text-slate-600 md:flex">
-        <a href="{{ route('home') }}#why-onlymlm"
+        <a href="{{ $homeUrl }}#why-onlymlm"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.why') }}</a>
-        <a href="{{ route('home') }}#features"
+        <a href="{{ $homeUrl }}#features"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.platform') }}</a>
-        <a href="{{ route('home') }}#how-it-works"
+        <a href="{{ $homeUrl }}#how-it-works"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.how') }}</a>
-        <a href="{{ route('home') }}#pricing"
+        <a href="{{ $homeUrl }}#pricing"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.pricing') }}</a>
         <a href="{{ route('documents') }}"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.documents') }}</a>
@@ -73,7 +77,7 @@
                 </div>
             </div>
         </details>
-        <a href="{{ route('home') }}#pricing"
+        <a href="{{ $homeUrl }}#pricing"
             class="rounded-full bg-slate-900 px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800">{{ __('layout.nav.request_demo') }}</a>
     </div>
     <details class="relative md:hidden">
@@ -89,15 +93,15 @@
         <div
             class="absolute right-0 z-50 mt-3 w-56 rounded-2xl border border-slate-200 bg-white p-4 text-sm text-slate-600 shadow-lg">
             <div class="flex flex-col gap-1">
-                <a href="{{ route('home') }}#why-onlymlm"
+                <a href="{{ $homeUrl }}#why-onlymlm"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.why') }}</a>
-                <a href="{{ route('home') }}#features"
+                <a href="{{ $homeUrl }}#features"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.platform') }}</a>
-                <a href="{{ route('home') }}#how-it-works"
+                <a href="{{ $homeUrl }}#how-it-works"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.how') }}</a>
-                <a href="{{ route('home') }}#pricing"
+                <a href="{{ $homeUrl }}#pricing"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.pricing') }}</a>
-                <a href="{{ route('home') }}#enterprise"
+                <a href="{{ $homeUrl }}#enterprise"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.demo') }}</a>
                 <a href="{{ route('documents') }}"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.documents') }}</a>
@@ -152,7 +156,7 @@
                 </details>
             </div>
             <div class="mt-4">
-                <a href="{{ route('home') }}#pricing"
+                <a href="{{ $homeUrl }}#pricing"
                     class="inline-flex w-full items-center justify-center rounded-full bg-slate-900 px-4 py-2 text-xs font-semibold text-white transition hover:bg-slate-800">
                     {{ __('layout.nav.request_demo') }}
                 </a>
