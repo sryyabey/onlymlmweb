@@ -4,12 +4,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('locale/{locale}', function (string $locale) {
     if (
-        !in_array($locale, [
+        ! in_array($locale, [
             'en',
             'tr',
             'es',
             'fr',
-            'pt'
+            'pt',
         ], true)
     ) {
         abort(404);
@@ -22,6 +22,9 @@ Route::get('locale/{locale}', function (string $locale) {
 })->name('locale.switch');
 
 Route::view('/', 'welcome')->name('home');
+
+Route::get('docs/bagisto', [App\Http\Controllers\Doc\BagistoDocController::class, 'show'])
+    ->name('docs.bagisto');
 
 Route::get('sitemap.xml', function () {
     return response()->view('sitemap')->header('Content-Type', 'application/xml; charset=UTF-8');
@@ -40,4 +43,4 @@ Route::get('documents', [App\Http\Controllers\Doc\DocController::class, 'index']
 Route::get('documents/{slug}', [App\Http\Controllers\Doc\DocController::class, 'show'])
     ->name('documents.show');
 
-require __DIR__ . '/auth.php';
+require __DIR__.'/auth.php';

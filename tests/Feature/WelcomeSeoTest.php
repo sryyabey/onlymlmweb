@@ -62,6 +62,11 @@ class WelcomeSeoTest extends TestCase
             'https://onlymlm.com/?lang=es',
             'https://onlymlm.com/?lang=fr',
             'https://onlymlm.com/?lang=pt',
+            'https://onlymlm.com/docs/bagisto',
+            'https://onlymlm.com/docs/bagisto?lang=tr',
+            'https://onlymlm.com/docs/bagisto?lang=ru',
+            'https://onlymlm.com/docs/bagisto?lang=fr',
+            'https://onlymlm.com/docs/bagisto?lang=es',
         ], $urls);
     }
 

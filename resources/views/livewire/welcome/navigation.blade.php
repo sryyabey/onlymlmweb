@@ -27,6 +27,7 @@
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.how') }}</a>
         <a href="{{ $homeUrl }}#pricing"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.pricing') }}</a>
+        <a href="{{ route('docs.bagisto') }}" class="rounded-lg px-3 py-2 hover:bg-slate-100">Bagisto Docs</a>
         <a href="{{ route('documents') }}"
             class="rounded-full px-3 py-1 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.documents') }}</a>
     </div>
@@ -103,7 +104,8 @@
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.pricing') }}</a>
                 <a href="{{ $homeUrl }}#enterprise"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.demo') }}</a>
-                <a href="{{ route('documents') }}"
+                <a href="{{ route('docs.bagisto') }}" class="rounded-lg px-3 py-2 hover:bg-slate-100">Bagisto Docs</a>
+        <a href="{{ route('documents') }}"
                     class="rounded-lg px-3 py-2 transition hover:bg-slate-100 hover:text-slate-900">{{ __('layout.nav.documents') }}</a>
             </div>
             <div class="mt-4 flex items-center justify-between text-xs font-semibold text-slate-500">

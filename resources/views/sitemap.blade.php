@@ -5,4 +5,9 @@
         <loc>{{ rtrim(config('app.url'), '/') }}/{{ $language === config('seo.default_locale', 'en') ? '' : '?lang=' . $language }}</loc>
     </url>
 @endforeach
+@foreach (['en', 'tr', 'ru', 'fr', 'es'] as $language)
+    <url>
+        <loc>{{ rtrim(config('app.url'), '/') }}/docs/bagisto{{ $language === 'en' ? '' : '?lang=' . $language }}</loc>
+    </url>
+@endforeach
 </urlset>
