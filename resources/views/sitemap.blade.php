@@ -10,4 +10,7 @@
         <loc>{{ rtrim(config('app.url'), '/') }}/docs/bagisto{{ $language === 'en' ? '' : '?lang=' . $language }}</loc>
     </url>
 @endforeach
+    <url>
+        <loc>{{ rtrim(config('app.url'), '/') }}/support</loc>
+    </url>
 </urlset>

@@ -34,6 +34,7 @@
         <aside class="guide-sidebar" aria-label="Documentation navigation">
             <p class="text-xs font-semibold uppercase tracking-widest text-teal-700">OnlyMLM / Bagisto</p>
             <h2 class="mt-2 title-font text-2xl font-semibold">Documentation</h2>
+            <a href="{{ config('marketplace.codester_url') }}" rel="sponsored" class="mt-4 inline-flex min-h-11 items-center rounded-xl border border-slate-300 bg-white px-4 py-2 font-semibold">{{ __('marketplace.buy') }}</a>
             <nav aria-label="Guide language" class="mb-6">
                 @foreach ($languages as $code => $label)
                     <a href="{{ route('docs.bagisto', $code === 'en' ? [] : ['lang' => $code]) }}" lang="{{ $code }}" hreflang="{{ $code }}" @if($language === $code) aria-current="page" @endif>{{ $label }}{{ $language === $code ? ' •' : '' }}</a>

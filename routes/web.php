@@ -23,6 +23,12 @@ Route::get('locale/{locale}', function (string $locale) {
 
 Route::view('/', 'welcome')->name('home');
 
+Route::get('support', function () {
+    app()->setLocale('en');
+
+    return view('support');
+})->name('support');
+
 Route::get('docs/bagisto', [App\Http\Controllers\Doc\BagistoDocController::class, 'show'])
     ->name('docs.bagisto');
 

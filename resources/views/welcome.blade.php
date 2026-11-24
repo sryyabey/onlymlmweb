@@ -15,9 +15,9 @@
                     {{ __('welcome.hero.description') }}
                 </p>
                 <div class="mt-8 flex flex-wrap items-center gap-4">
-                    <a href="#pricing"
+                    <a href="{{ config('marketplace.codester_url') }}" rel="sponsored"
                         class="rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-700">
-                        {{ __('welcome.hero.cta_primary') }}
+                        {{ __('marketplace.buy') }}
                     </a>
                     <a href="#features"
                         class="rounded-full border border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900">
@@ -247,22 +247,22 @@
         <div class="mt-12 grid gap-6 lg:grid-cols-3">
             <div id="marketplace" class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-500">{{ __('welcome.pricing.cards.self_eyebrow') }}</p>
-                <p class="title-font mt-3 text-2xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.self_title') }}</p>
-                <p class="title-font mt-2 text-3xl font-semibold text-slate-900">{{ __('welcome.pricing.cards.self_price') }}</p>
+                <p class="title-font mt-3 text-2xl font-semibold text-slate-900">{{ __('marketplace.title') }}</p>
+                <p class="title-font mt-2 text-3xl font-semibold text-slate-900">{{ __('marketplace.price') }}</p>
                 <p class="mt-2 text-sm text-slate-600">
-                    {{ __('welcome.pricing.cards.self_body') }}
+                    {{ __('marketplace.body') }}
                 </p>
                 <ul class="mt-6 space-y-3 text-sm text-slate-600">
-                    <li>{{ __('welcome.pricing.lists.self.0') }}</li>
-                    <li>{{ __('welcome.pricing.lists.self.1') }}</li>
-                    <li>{{ __('welcome.pricing.lists.self.2') }}</li>
-                    <li>{{ __('welcome.pricing.lists.self.3') }}</li>
-                    <li>{{ __('welcome.pricing.lists.self.4') }}</li>
+                    <li>{{ __('marketplace.source') }}</li>
+                    <li>{{ __('marketplace.network') }}</li>
+                    <li>{{ __('marketplace.points') }}</li>
+                    <li>{{ __('marketplace.guides') }}</li>
+                    <li>{{ __('marketplace.scope') }}</li>
                 </ul>
-                <span
-                    class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-slate-100 px-5 py-3 text-sm font-semibold text-slate-600">
-                    {{ __('welcome.pricing.cards.self_cta') }}
-                </span>
+                <a href="{{ config('marketplace.codester_url') }}" rel="sponsored"
+                    class="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-teal-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-teal-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-teal-700">
+                    {{ __('marketplace.buy') }}
+                </a>
             </div>
             <div class="rounded-2xl border border-slate-900 bg-slate-900 p-8 text-white shadow-lg">
                 <p class="text-xs uppercase tracking-[0.2em] text-slate-300">{{ __('welcome.pricing.cards.guided_eyebrow') }}</p>

@@ -6,6 +6,8 @@
                 <p class="mt-2 text-sm text-slate-400">{{ __('layout.footer.description') }}</p>
             </div>
             <div class="flex flex-wrap gap-6 text-sm">
+                <a href="{{ route('support') }}" lang="en" class="inline-flex min-h-6 items-center text-white underline underline-offset-4 hover:text-teal-200">OnlyMLM Support</a>
+                <a href="{{ config('marketplace.codester_url') }}" rel="sponsored" class="inline-flex min-h-6 items-center text-white underline underline-offset-4 hover:text-teal-200">{{ __('marketplace.buy') }}</a>
                 <span>{{ __('layout.footer.licensed') }}</span>
                 <span>{{ __('layout.footer.security') }}</span>
                 <span>{{ __('layout.footer.scalable') }}</span>
